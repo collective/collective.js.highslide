@@ -1,5 +1,1 @@
-# -*- extra stuff goes here -*-
-
-
-def initialize(context):
-    """Initializer called when used as a Zope 2 product."""
+__import__('pkg_resources').declare_namespace(__name__)
