@@ -8,13 +8,6 @@
 
   <five:registerPackage package="." initialize=".initialize" />
 
-  <genericsetup:registerProfile
-      name="default"
-      title="collective.js"
-      directory="profiles/default"
-      description="Installs the collective.js package"
-      provides="Products.GenericSetup.interfaces.EXTENSION"
-      />
   <!-- -*- extra stuff goes here -*- -->
   <browser:resourceDirectory
      name="highslide"
