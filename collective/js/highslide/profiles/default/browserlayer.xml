@@ -1,0 +1,6 @@
+<layers>
+<!-- uncomment to activate
+    <layer name="collective.js.highslide"
+           interface="collective.js.highslide.interfaces.ILayer" />
+-->
+</layers>

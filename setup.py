@@ -3,23 +3,13 @@ import os
 
 version = '1.0'
 
-long_description = (
-    open('README.txt').read()
-    + '\n' +
-    'Contributors\n'
-    '============\n'
-    + '\n' +
-    open('CONTRIBUTORS.txt').read()
-    + '\n' +
-    open('CHANGES.txt').read()
-    + '\n')
-
 setup(name='collective.js.highslide',
       version=version,
-      description="",
-      long_description=long_description,
+      description="Register highslide jquery plugin into plone resource registry",
+      long_description=open("README.rst").read() + "\n" +
+                       open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
-      # http://pypi.python.org/pypi?%3Aaction=list_classifiers
+      # http://pypi.python.org/pypi?:action=list_classifiers
       classifiers=[
         "Programming Language :: Python",
         ],
@@ -27,20 +17,16 @@ setup(name='collective.js.highslide',
       author='',
       author_email='',
       url='http://svn.plone.org/svn/collective/',
-      license='gpl',
-      packages=find_packages('src'),
-      package_dir = {'': 'src'},
-      namespace_packages=['collective','collective.js'],
+      license='GPL',
+      packages=find_packages(exclude=['ez_setup']),
+      namespace_packages=['collective', 'collective.js'],
       include_package_data=True,
       zip_safe=False,
       install_requires=[
           'setuptools',
           # -*- Extra requirements: -*-
       ],
-      extras_require={'test': ['plone.app.testing']},
       entry_points="""
       # -*- Entry points: -*-
-  	  [z3c.autoinclude.plugin]
-  	  target = plone
       """,
       )
