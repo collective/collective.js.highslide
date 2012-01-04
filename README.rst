@@ -8,6 +8,8 @@ uses Creative Commons Attribution-NonCommercial 2.5 License and is only for
 non-commercial use unless you have purchased a commercial license from the
 Highslide_ website.
 
+Version: 4.1.13
+
 About Highslide
 ===============
 
